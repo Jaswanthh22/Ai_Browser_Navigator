@@ -1,10 +1,13 @@
-
-
 ----------------------------------------------------------------
 
 ## Web Navigator AI Agent
 An autonomous AI-powered agent that takes **natural language instructions** and drives the web automatically on a local machine.  
 This system combines a **locally running LLM** (for instruction understanding and planning) with a **browser automation setup** (Playwright/Selenium/Puppeteer) to execute user commands.
+
+## Overview
+Browser Agent is a sophisticated Python application that enables users to control web browsers through natural language instructions. It uses a combination of AI models, browser automation, and DOM analysis to navigate websites, fill forms, click buttons, and perform complex web tasks based on natural language descriptions.
+
+The agent features intelligent page analysis, robust error handling, and flexible interaction capabilities, making it ideal for automating repetitive browser tasks, web scraping, site testing, and interactive browsing sessions.
 
 ##  Features
 
