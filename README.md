@@ -1,7 +1,8 @@
 ----------------------------------------------------------------
 
 ## Web Navigator AI Agent
-An autonomous AI-powered agent that takes **natural language instructions** and drives the web automatically on a local machine.  
+# An autonomous AI agent that understands natural language and drives the web automatically.
+
 This system combines a **locally running LLM** (for instruction understanding and planning) with a **browser automation setup** (Playwright/Selenium/Puppeteer) to execute user commands.
 
 ## Overview
@@ -31,18 +32,21 @@ The agent features intelligent page analysis, robust error handling, and flexibl
 
 ## Tech Stack
 
--   **Orchestration:** Python / Node.js
-    
--   **Instruction Parsing (LLM):**
-    
-    
-        
--   **Browser Automation:**
+- **Languages / Orchestration:** Python, Node.js  
 
+- **Instruction Parsing (LLM):**  
+  - Ollama (local LLM runtime)  
+  - LangChain (prompt orchestration, reasoning, and step planning)  
+  - (Optional) OpenAI / Hugging Face models for fallback or testing  
 
+- **Browser Automation:** Playwright / Selenium / Puppeteer  
 
+- **Database:** PostgreSQL / MongoDB (for storing queries, logs, structured results)  
 
-
+- **DevOps & Deployment:** GitHub Actions (CI/CD), Docker, cloud hosting  
+  - Frontend → Vercel/Netlify  
+  - Backend → Railway/Render/Heroku  
+  - Database → Managed cloud DB service  
     
    ## Installation
 
@@ -80,18 +84,15 @@ We make coding more **accessible, simple, and collaborative** for everyone.
 
 ## License
 
-MIT License – feel free to use, modify, and contribute.
+MIT License – feel free to use, modify, and contribute
 
 
 
-
-
-vedio speech:
 
 ### **1. Project Introduction (PM/Testing & Docs Lead)**
 
 👤 **Speaker: PM/Testing & Docs Lead**  
-"Hello everyone! We are Team ----------- and our hackathon project is **Web Navigator AI Agent**, based on the problem statement HACXPB002 by OneCompiler.
+"Hello everyone! We are Team Kanyarasi and our hackathon project is **Web Navigator AI Agent**, based on the problem statement HACXPB002 by OneCompiler.
 
 The idea is to build an AI Agent that can take **natural language instructions** from the user, and then autonomously control a browser to fetch and structure information. For example, if a user says _'Search for laptops under 50k and list the top 5'_, our agent will plan the task, browse the web, extract results, and return them in a neat structured format.
 
