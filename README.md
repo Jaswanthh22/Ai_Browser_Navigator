@@ -100,15 +100,13 @@ To achieve this, we are combining a **local LLM for planning** with **browser au
 
 ----------
 
-### **2. Frontend Lead**
+### **2. Frontend developer**
 
 👤 **Speaker: Frontend Lead**  
-"As the Frontend Lead, I’m responsible for the **user interface and experience**.
+As the Frontend developer, I’m responsible for the **user interface and experience**.
 
-We are designing a clean, **responsive web app** where users can simply type or speak their instructions. The results from the AI agent will be displayed in an **organized, readable format**, such as tables or cards.
-
-I’ll also handle **API integration** so that the frontend communicates smoothly with our backend AI engine, ensuring the user feels like they’re chatting with a smart assistant that can browse the web on their behalf."
-
+We are going to build a clean, **responsive web app** where users can simply type or text their instructions. The results from the AI agent will be displayed in an **organized, readable format**.
+I will also manage the API integration to ensure the frontend acts as a transparent window to the AI engine's work. It'll be as if a knowledgeable assistant is carrying out your web search requests right in front of you, with every step visible on the screen. This design allows for instant interruption—you can stop the process the moment you see the work isn't going where you want it to.
 ----------
 
 ### **3. Backend Lead**
