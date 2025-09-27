@@ -33,7 +33,8 @@ The agent features intelligent page analysis, robust error handling, and flexibl
 ## Tech Stack
 
 - **Languages / Orchestration:** Python, Node.js  
-
+- **Frontend**: Node.js (Frontend Service), Vercel/Netlify (Deployment)
+- **Backend & Orchestration**: Python (Agent Core, Backend Logic), LangChain/LangGraph (Multi-Agent Orchestration), Ollama (Local LLM Runtime)
 - **Instruction Parsing (LLM):**  
   - Ollama (local LLM runtime)  
   - LangChain (prompt orchestration, reasoning, and step planning)  
@@ -94,7 +95,7 @@ MIT License – feel free to use, modify, and contribute
 👤 **Speaker: PM/Testing & Docs Lead**  
 "Hello everyone! We are Team Kanyarasi and our hackathon project is **Web Navigator AI Agent**, based on the problem statement HACXPB002 by OneCompiler.
 
-The idea is to build an AI Agent that can take **natural language instructions** from the user, and then autonomously control a browser to fetch and structure information. For example, if a user says _'Search for laptops under 50k and list the top 5'_, our agent will plan the task, browse the web, extract results, and return them in a neat structured format.
+The idea is to build an AI Agent that can take **natural language instructions** from the user, and then autonomously control a browser to fetch and structure information. For example, if a user says _'Search for laptops under 50k and list the top 5'_, our agent will plan the task, browse the web, extract results,compare and return them in a neat structured format.
 
 To achieve this, we are combining a **local LLM for planning** with **browser automation tools** like Playwright or Selenium. We’ve divided our responsibilities into five roles to bring this prototype to life. Let’s walk you through them."
 
@@ -105,11 +106,9 @@ To achieve this, we are combining a **local LLM for planning** with **browser au
 👤 **Speaker: Frontend Lead**  
 As the Frontend developer, I’m responsible for the **user interface and experience**.
 
-We are going to build a clean, **responsive web app** where users can simply type or text their instructions. The results from the AI agent will be displayed in an **organized, readable format**.
+We are going to build a clean, **responsive web app** where users can simply type or speak their instructions. The results from the AI agent will be displayed in an **organized, readable format**.
 
-I will also manage the API integration to ensure the frontend acts as a transparent window to the AI engine's work. It'll be as if a knowledgeable assistant is carrying out your web search requests right in 
-
-front of you, with every step visible on the screen. This design allows for instant interruption—you can stop the process the moment you see the work isn't going where you want it to.
+I will also manage the API integration to ensure the frontend acts as a transparent window to the AI engine's work. It'll be as if a knowledgeable assistant is carrying out your web search requests right in front of you, with every step visible on the screen. This design allows for instant interruption—you can stop the process the moment you see the work isn't going where you want it to.
 
 ----------
 
@@ -121,19 +120,24 @@ front of you, with every step visible on the screen. This design allows for inst
 This involves building **REST APIs** that connect the frontend to the AI agent. The backend will pass user instructions to the **local LLM** (through LangChain or Ollama), translate those into actionable steps, and then trigger **browser automation** via Playwright or Selenium.
 
 Additionally, I’ll handle **authentication and business logic**, making sure each request is securely processed and efficiently executed."
-
+**API Implementation**: Builds REST APIs to connect the frontend to the AI system, ensuring efficient communication of instructions and status updates.
+* **Agent Control**: Passes instructions to the local LLM (via LangChain or Ollama), translating them into multi-step plans and handling **Intent Routing** to specialized agents.
+* **Automation Trigger**: Manages browser automation sessions (via Playwright or Selenium), translating planned steps into web actions.
+* **Security & Logic**: Ensures secure processing, efficient execution, and accurate streaming of requests to the user.
 ----------
 
 ### **4. Database Lead**
 
 👤 **Speaker: Database Lead**  
-"As the Database Lead, I’ll design and manage the ----------- of our project.
+"As the Database Lead, I’ll design and manage the system's memory and auditing layer of our project.
 
 While much of the browsing data is real-time, we also need to **store structured results, user queries, and logs** for analytics and debugging. I’ll design the **schema** for storing this information, optimize **queries for speed**, and ensure our database can handle multiple queries during testing.
 
 This way, our AI agent doesn’t just respond — it also **learns and improves** from stored user interactions."
 
-----------
+* **Data Storage**: Uses PostgreSQL/MongoDB to store structured results, historical queries, and execution logs for analytics and debugging.
+* **Schema Design**: Optimizes schema to handle high volumes of logs and results generated by the multi-agent system.
+* **Performance**: Ensures queries are optimized for speed, supporting scalability for multiple concurrent requests and enabling future analytics to enhance agent performance.
 
 ### **5. DevOps/Deployment Lead**
 
