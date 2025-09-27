@@ -13,7 +13,7 @@ The agent features intelligent page analysis, robust error handling, and flexibl
 ##  Features
 
 -   **Natural Language Understanding**  
-    Users can provide simple instructions like:
+    Users can provide simple instructions like in the form of text or speech:
     
     -   _"Search for laptops under 50k and list top 5"_
         
@@ -29,6 +29,11 @@ The agent features intelligent page analysis, robust error handling, and flexibl
     
 -   **Local-First Design**  
     Runs entirely on your machine with local LLMs (via **Ollama**, **LangChain**, or other providers).
+-   **Job searching agent**
+    Searches job portals (LinkedIn, Naukri, Indeed), extracts job details (title, company, salary, location, experience), ranks, and organizes.
+-   **Shopping agent**
+    Searches multiple e-commerce sites (Amazon, Flipkart, etc.), collects product info (price ,rating,features) , compares,and summarizes.
+-  
 
 ## Tech Stack
 
