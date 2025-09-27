@@ -1,7 +1,7 @@
 ----------------------------------------------------------------
 
-## Web Navigator AI Agent
-# An autonomous AI agent that understands natural language and drives the web automatically.
+# Web Navigator AI Agent
+## An autonomous AI agent that understands natural language and drives the web automatically.
 
 This system combines a **locally running LLM** (for instruction understanding and planning) with a **browser automation setup** (Playwright/Selenium/Puppeteer) to execute user commands.
 
