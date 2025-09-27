@@ -106,7 +106,11 @@ To achieve this, we are combining a **local LLM for planning** with **browser au
 As the Frontend developer, I’m responsible for the **user interface and experience**.
 
 We are going to build a clean, **responsive web app** where users can simply type or text their instructions. The results from the AI agent will be displayed in an **organized, readable format**.
-I will also manage the API integration to ensure the frontend acts as a transparent window to the AI engine's work. It'll be as if a knowledgeable assistant is carrying out your web search requests right in front of you, with every step visible on the screen. This design allows for instant interruption—you can stop the process the moment you see the work isn't going where you want it to.
+
+I will also manage the API integration to ensure the frontend acts as a transparent window to the AI engine's work. It'll be as if a knowledgeable assistant is carrying out your web search requests right in 
+
+front of you, with every step visible on the screen. This design allows for instant interruption—you can stop the process the moment you see the work isn't going where you want it to.
+
 ----------
 
 ### **3. Backend Lead**
