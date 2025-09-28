@@ -5,10 +5,11 @@
 This system combines a **locally running LLM** (for instruction understanding and planning) with a **browser automation setup** (Playwright/Selenium/Puppeteer) to execute user commands.
 
 ## Reason for taking this problem statement:
-The growing difficulties for users encounter when navigating the complicated digital space is the main reason for choosing the problem statement **Web Navigator AI**. Traditional search engines frequently fail to deliver organized, context-aware, and useful information because of the billions of web pages, the variety of data formats, and the irrelevant of search results.These gaps are filled by an Web Navigator AI that.
+The growing difficulties for users encounter when navigating the complicated digital space is the main reason for choosing the problem statement **Web Navigator AI**. Traditional search engines frequently fail to deliver organized, context-aware, and useful information because of the billions of web pages, the variety of data formats, and the irrelevant of search results.These gaps are filled by an Web Navigator AI that:-
 - Allow user to interact with browser with natural language,
 - Perform browsing ,filtering,scraping and structuring data without manual effort,
 - Give results in a structured format such as summaries and comparisons.
+
 The AI Web Navigator transforms traditional web searching into an intelligent, automated, and user-centric experience
  
 ## Overview:
