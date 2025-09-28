@@ -128,7 +128,7 @@ According to the problem statement , if someone wants find information on the we
 - **type the problem**
 - **visit site**
 - **check results one by one**
-- **collect the information**
+- **collect the information**_
  This process takes a lot of time.
 The main problem is that users want to give simple language instructions and have a system that can do all browsing work automatically for them.
 So, the main problem to solve is how to make a system understand what the user wants
