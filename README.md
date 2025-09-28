@@ -105,7 +105,7 @@ Backend focuses on connecting the AI agent with the frontend without relying on 
 
 **Automation Trigger**: Oversees browser automation sessions (using Playwright or Selenium), converting the agent’s step-by-step plan into real web actions.
 
-**Security & Logic**:The user has no need of worrying about data leakage, As the LLM runs in the local machine so the data won't go out of the device. It handles authentication, ensures safe processing, and maintains accurate execution of tasks while streaming progress back to the user in real time.
+**Security & Logic**: The user has no need of worrying about data leakage, As the LLM runs in the local machine so the data won't go out of the device. It handles authentication, ensures safe processing, and maintains accurate execution of tasks while streaming progress back to the user in real time.
 
 
 ## DevOps Lead:-
