@@ -141,6 +141,7 @@ Uniqueness and impact -:
 In this project we are using two main unique ideas-
 Job searching agent
 Shopping agent
+general browsing
 
 From this two ideas -:
 -Let us take an example of a person who is searching for a job in different platforms  can prefer this browser so that he can upload his resume once and then he will get to know about jobs based on his resume from different platforms.So, by this the AI agent will be given access for every platform so that it will search jobs for the user according to their resume.
