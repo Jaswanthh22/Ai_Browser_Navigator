@@ -101,14 +101,14 @@ The design will also showcase the agent’s activity and results in real time, w
 ## Backend developer:-
 Backend focuses on connecting the AI agent with the frontend without relying on external APIs. The backend will manage direct interactions with the local LLM (via LangChain or Ollama), transforming user instructions into actionable, multi-step plans.
 
-LLM Orchestration: The backend ensures prompts are structured, reasoning flows smoothly, and intent is routed to the right specialized agent. This is the essence of Agent Control.
+**LLM Orchestration**: The backend ensures prompts are structured, reasoning flows smoothly, and intent is routed to the right specialized agent. This is the essence of Agent Control.
 
-Automation Trigger: Oversees browser automation sessions (using Playwright or Selenium), converting the agent’s step-by-step plan into real web actions.
+**Automation Trigger**: Oversees browser automation sessions (using Playwright or Selenium), converting the agent’s step-by-step plan into real web actions.
 
-Security & Logic: Handles authentication, ensures safe processing, and maintains accurate execution of tasks while streaming progress back to the user in real time.
+**Security & Logic**:The user has no need of worrying about data leakage, As the LLM runs in the local machine so the data won't go out of the device. It handles authentication, ensures safe processing, and maintains accurate execution of tasks while streaming progress back to the user in real time.
 
 
-## ** DevOps Lead**:-
+## DevOps Lead:-
 we need to make sure our project is executed flawlessly from development to deployment. To keep the database, frontend, and backend organized and manageable by the team, I'll start by establishing a clear repository structure. In order to minimize errors and expedite our workflow, I will also set up CI/CD pipelines so that each code update is automatically tested and deployed.
 For hosting, we will use a managed cloud service like MongoDB Atlas or PostgreSQL for the database, Railway or Render for the backend, and Vercel for the frontend. Stability, scalability, and dependability are offered by this configuration.
 we will incorporate logging and monitoring tools to track performance, identify issues promptly, and guarantee the agent remains secure in order to keep everything under control. To put it briefly, my job is to ensure that the Web Navigator AI Agent is not only operational but also trustworthy, effective, and prepared for practical application.
