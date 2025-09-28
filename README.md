@@ -138,6 +138,27 @@ Analogy: This is like taking the sentences you highlighted and entering them int
 Once the data is clean and organized, it needs to be saved. The system uses a database, like PostgreSQL or MongoDB, to record and store the results. This allows the user to access the findings later and keeps a record of the agent's completed tasks.
 
 Analogy: This is like saving your spreadsheet file to your hard drive so you can easily find, open, and use it later.
+## Implementation Plan:
+
+- Phase 1 (Foundation): You start by setting up the project's foundation. This includes code repositories, CI/CD pipelines, local development environments, and basic cloud hosting infrastructure.
+
+- Phase 2 (Development): Next, you create the main standalone components. This involves the backend's reasoning logic, the browser automation module, and the frontend user interface.
+
+- Phase 3 (Integration): After building the main parts, you connect them. This phase focuses on end-to-end testing to ensure the entire workflow from user command to browser action works properly.
+
+- Phase 4 (Expansion & Deployment): Finally, you develop the specialized "Shopping" and "Job searching" agents. Then, you deploy the finished application and set up tools to monitor its performance.
+
+## Performance & Validation:
+Performance validation for the Web Navigator AI Agent relies on specific metrics and a clear testing strategy.
+
+Evaluation Metrics  
+Task Completion Rate (TCR): This measures the percentage of user commands that the agent completes successfully without major errors.
+
+Data Accuracy: This checks that the information the agent extracts, like product prices and job titles, is correct according to the source website.
+
+Response Time: This tracks the total time from the user's initial command to the final result delivery.
+
+Robustness: This assesses how well the agent manages errors, such as unexpected changes in a website's layout or when it cannot find an element.
 
 ## Prototype (PM/Testing & Documents Lead):-
 Lastly, we will oversee our **task assignments, documentation, testing, and pitch preparation** 
