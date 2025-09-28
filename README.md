@@ -5,18 +5,17 @@
 
 This system combines a **locally running LLM** (for instruction understanding and planning) with a **browser automation setup** (Playwright/Selenium/Puppeteer) to execute user commands.
 
-## Summary
-In order to do tasks like searching, clicking, extracting data, and presenting results in an organized manner, the browser agent uses natural language instructions, either spoken or typed, to determine what the user truly wants. In order to navigate websites, fill out forms, click buttons, and carry out intricate web tasks based on natural language descriptions, this process combines browser automation, DOM analysis, and AI models.
+## overview:
+To do tasks like searching, clicking, extracting data, and presenting results in an organized manner, the browser agent uses natural language instructions, either spoken or typed, to determine what the user truly wants. In order to navigate websites, fill out forms, click buttons, and carry out intricate web tasks based on natural language descriptions, this process combines browser automation, DOM analysis, and AI models.
 For example:
- "Look for laptops under ₹50,000 and make a list of the top five."
+"Look for laptops under ₹50,000 and make a list of the top five."
 The agent will: -Use a local LLM to plan the task,
 -Open the browser and look up well-known websites,
--extract pertinent data (titles, costs, and ratings),
-Analyze the outcomes and present them in a clear, well-organized table.
+-extract data like(titles, costs, and ratings),
+Analyze the outcomes and present them in a clear, well-organized manner.
 The browser functions similarly to a virtual assistant, but instead of searching, it does web work for us.
 
-##  Features
-
+##  Features:
 -   **Natural Language Understanding**  
     Users can simply talk or type instruction like:
     
@@ -29,13 +28,12 @@ The browser functions similarly to a virtual assistant, but instead of searching
       The system uses a locally running LLM (via Ollama & LangChain) to understand these commands, break them into steps, and plan the required browser actions.
         
 -   **Autonomous Web Navigation**
-  
     Once the instruction process is done it will understand it and uses Playwright to actually:
     - Open websites
     - Fill forms
     - Click buttons
     - Navigate links
-    - Scrape data
+    - scrap data
       The system will handle the problems just like a human would but automatically.
 -   **Structured Outputs**  
     Extracts relevant data from web pages and returns results in **JSON/CSV/table**  format for further usage.
@@ -47,8 +45,7 @@ The browser functions similarly to a virtual assistant, but instead of searching
     Searches multiple e-commerce sites (Amazon, Flipkart, etc.), collects product info (price ,rating,features) , compares,and summarizes.
 -  
 
-## Tech Stack 
-
+## Tech Stack :
 - **Languages / Orchestration:** Python, Node.js  
 - **Frontend**: Node.js (Frontend Service),javasript,html,css
 - **Backend & Orchestration**: Python (Agent Core, Backend Logic), LangChain/LangGraph (Multi-Agent Orchestration), Ollama (Local LLM Runtime)
@@ -64,7 +61,7 @@ The browser functions similarly to a virtual assistant, but instead of searching
 - **DevOps & Deployment:** GitHub Actions (CI/CD), Docker, cloud hosting  
   
 
-## Prerequisites
+## Prerequisites:
 
 -   Python 3.9+ or Node.js 18+
     
