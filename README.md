@@ -104,19 +104,19 @@ Using LangChain or Ollama, the local LLM receives instructions, converts them in
 * **Automation Trigger**: Manages browser automation sessions (via Playwright or Selenium), translating planned steps into web actions.
 * **Security & Logic**: Ensures secure processing, efficient execution, and accurate streaming of requests to the user.
 
-## **4. Database Lead**
+## **4. Database Lead**:
 We must **store structured results, user queries, and logs** for analytics and debugging, even though a large portion of the browsing data is real-time. During testing, I'll make sure our database can manage several queries, optimize **queries for speed**, and create the **schema** for storing this data.
 In this manner, our AI agent **learns and improves** from past user interactions in addition to responding.
 * **Data Storage**: Stores historical queries, structured results, and execution logs for debugging and analytics using PostgreSQL/MongoDB.
 * **Schema Design**: Optimizes the schema to manage large amounts of logs and results produced by the multi-agent system.
 * **Performance**: Assures that queries are speed-optimized, allowing for scalability for numerous requests at once and opening the door for future analytics to improve agent performance.
   
-## **5. DevOps Lead** 
+## **5. DevOps Lead**:
 we need to make sure our project is executed flawlessly from development to deployment. To keep the database, frontend, and backend organized and manageable by the team, I'll start by establishing a clear repository structure. In order to minimize errors and expedite our workflow, I will also set up CI/CD pipelines so that each code update is automatically tested and deployed.
 For hosting, we will use a managed cloud service like MongoDB Atlas or PostgreSQL for the database, Railway or Render for the backend, and Vercel for the frontend. Stability, scalability, and dependability are offered by this configuration.
 we will incorporate logging and monitoring tools to track performance, identify issues promptly, and guarantee the agent remains secure in order to keep everything under control. To put it briefly, my job is to ensure that the Web Navigator AI Agent is not only operational but also trustworthy, effective, and prepared for practical application.
 
-## **6. Prototype and Closing Summary (PM/Testing & Documents Lead)**
+## **6. Prototype and Closing Summary (PM/Testing & Documents Lead)**:
 Lastly, we will oversee our **task assignments, documentation, testing, and pitch preparation** 
 ### Our model will demonstrate:
 Users enter instructions in a **frontend app**.
