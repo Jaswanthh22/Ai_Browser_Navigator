@@ -87,16 +87,20 @@ The browser functions similarly to a virtual assistant, but instead of searching
 OneCompiler helps coding more **accessible, simple, and collaborative** for everyone.
 
 
-## **1. Project Introduction**:-
+## ** Project Introduction**:-
 The idea is to build an AI Agent that can take **natural language instructions** from the user, and then autonomously control a browser to fetch and structure information. For example, if a user says _'Search for laptops under 50k and list the top 5'_, our agent will plan the task, browse the web, extract results,compare and return them in a neat structured format.
 To achieve this, we are combining a **local LLM for planning** with **browser automation tools** like Playwright or Selenium. We’ve divided our responsibilities into five roles to bring this prototype to life. Let’s walk you through them.
 
-## **2. Frontend developer**:
+## ** LLM integration**:-
+As the "brain" of the project, the LLM will decipher intent, simplify complicated requests, and facilitate a conversational and seamless browsing experience. Furthermore, it will give users context-aware explanations so they are aware of what is happening at every stage. Whether it's completing forms, summarizing content, or comparing data from various websites, the LLM will help close the gap between online activities and human communication.
+To put it briefly, the LLM integration transforms the agent into a useful partner who adjusts to the way people naturally interact online, rather than merely a tool.
+
+## ** Frontend developer**:
 This person is in charge of the **user interface and experience**.
 We're going to create a simple website that allows users to voice or type their instructions. The AI agent's output will be presented in a **structured fashion**.
 Additionally, we will oversee the **API integration** and show agent activity and outcomes in real time. With each step displayed on the screen, it will seem as though an informed assistant is performing your web search queries directly in front of you. You can immediately halt the process if you notice that the work isn't progressing as you had hoped thanks to this design.
 
-## **3. Backend developer**:
+## ** Backend developer**:
 This entails creating **REST APIs** to link the AI agent and frontend. The **local LLM** will receive user instructions from the backend (via LangChain or Ollama), convert them into actionable steps, and then use Playwright to initiate **browser automation**.
 we'll also take care of **authentication and business logic**, ensuring that every request is handled securely and effectively.
 **API Implementation**: Creates REST APIs to link the AI system and the frontend, guaranteeing effective transmission of commands and status updates.
@@ -104,19 +108,14 @@ Using LangChain or Ollama, the local LLM receives instructions, converts them in
 * **Automation Trigger**: Manages browser automation sessions (via Playwright or Selenium), translating planned steps into web actions.
 * **Security & Logic**: Ensures secure processing, efficient execution, and accurate streaming of requests to the user.
 
-## **4. Database Lead**:
-We must **store structured results, user queries, and logs** for analytics and debugging, even though a large portion of the browsing data is real-time. During testing, I'll make sure our database can manage several queries, optimize **queries for speed**, and create the **schema** for storing this data.
-In this manner, our AI agent **learns and improves** from past user interactions in addition to responding.
-* **Data Storage**: Stores historical queries, structured results, and execution logs for debugging and analytics using PostgreSQL/MongoDB.
-* **Schema Design**: Optimizes the schema to manage large amounts of logs and results produced by the multi-agent system.
-* **Performance**: Assures that queries are speed-optimized, allowing for scalability for numerous requests at once and opening the door for future analytics to improve agent performance.
-  
-## **5. DevOps Lead**:
+## ** LLM integration**:
+
+## ** DevOps Lead**:
 we need to make sure our project is executed flawlessly from development to deployment. To keep the database, frontend, and backend organized and manageable by the team, I'll start by establishing a clear repository structure. In order to minimize errors and expedite our workflow, I will also set up CI/CD pipelines so that each code update is automatically tested and deployed.
 For hosting, we will use a managed cloud service like MongoDB Atlas or PostgreSQL for the database, Railway or Render for the backend, and Vercel for the frontend. Stability, scalability, and dependability are offered by this configuration.
 we will incorporate logging and monitoring tools to track performance, identify issues promptly, and guarantee the agent remains secure in order to keep everything under control. To put it briefly, my job is to ensure that the Web Navigator AI Agent is not only operational but also trustworthy, effective, and prepared for practical application.
 
-## **6. Prototype and Closing Summary (PM/Testing & Documents Lead)**:
+## ** Prototype and Closing Summary (PM/Testing & Documents Lead)**:
 Lastly, we will oversee our **task assignments, documentation, testing, and pitch preparation** 
 ### Our model will demonstrate:
 Users enter instructions in a **frontend app**.
@@ -124,6 +123,7 @@ An LLM-powered **backend service** that translates commands into actions in the 
 Real-time web data is retrieved by **browser automation**.
 A **database** for recording and archiving outcome.  
 A **CI/CD pipeline** to maintain dependability and deployability.
+
 Together, this forms our **Web Navigator AI Agent** — a powerful tool to make browsing more intelligent and autonomous.
 
 Thank you!"
