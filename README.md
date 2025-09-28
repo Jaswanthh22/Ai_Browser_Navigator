@@ -48,7 +48,7 @@ The browser functions similarly to a virtual assistant, but instead of searching
 ## Tech Stack :
 - **Languages :** Python, Node.js  
 - **Frontend**: Node.js (Frontend Service),javasript,html,css
-- **Backend **: Python (Agent Core, Backend Logic), LangChain/LangGraph (Multi-Agent Orchestration), Ollama (Local LLM Runtime)
+- **Backend**: Python (Agent Core, Backend Logic), LangChain/LangGraph (Multi-Agent Orchestration), Ollama (Local LLM Runtime)
 - **Instruction Parsing (LLM):**  
   - Ollama (local LLM runtime)  
   - LangChain (for structuring prompts, reasoning, and organizing multi-step workflows)  
