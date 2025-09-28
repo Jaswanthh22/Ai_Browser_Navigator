@@ -27,7 +27,7 @@ The browser functions similarly to a virtual assistant, but instead of searching
  
       The system uses a locally running LLM (via Ollama & LangChain) to understand these commands, break them into steps, and plan the required browser actions.
         
--   **Autonomous Web Navigation**
+-   **Autonomous Web Navigation**:
     Once the instruction process is done it will understand it and uses Playwright to actually:
     - Open websites
     - Fill forms
@@ -71,7 +71,7 @@ The browser functions similarly to a virtual assistant, but instead of searching
     
 -   Local LLM runtime (e.g., **Ollama**)
 
-## Future Enhancements
+## Future Enhancements:
 
 -   ✅ Multi-step task execution (e.g., "book a train ticket and email me confirmation")
     
@@ -95,11 +95,12 @@ To achieve this, we are combining a **local LLM for planning** with **browser au
 As the "brain" of the project, the LLM will decipher intent, simplify complicated requests, and facilitate a conversational and seamless browsing experience. Furthermore, it will give users context-aware explanations so they are aware of what is happening at every stage. Whether it's completing forms, summarizing content, or comparing data from various websites, the LLM will help close the gap between online activities and human communication.
 To put it briefly, the LLM integration transforms the agent into a useful partner who adjusts to the way people naturally interact online, rather than merely a tool.
 
-## ** Frontend developer**:
+## ** Frontend developer**:-
 “The frontend part is all about the user interface and experience.
 We’re going to build a simple website where users can either speak or type their instructions. The AI agent’s responses will be displayed in a structured, easy-to-follow format.
 The design will also showcase the agent’s activity and results in real time, with each step unfolding on screen so it feels like an assistant is performing the search right in front of you. If the progress isn’t going in the desired direction, users can stop the process instantly.”
-## ** Backend developer**:
+
+## ** Backend developer**:-
 Backend focuses on connecting the AI agent with the frontend without relying on external APIs. The backend will manage direct interactions with the local LLM (via LangChain or Ollama), transforming user instructions into actionable, multi-step plans.
 
 LLM Orchestration: The backend ensures prompts are structured, reasoning flows smoothly, and intent is routed to the right specialized agent. This is the essence of Agent Control.
@@ -109,12 +110,12 @@ Automation Trigger: Oversees browser automation sessions (using Playwright or Se
 Security & Logic: Handles authentication, ensures safe processing, and maintains accurate execution of tasks while streaming progress back to the user in real time.
 
 
-## ** DevOps Lead**:
+## ** DevOps Lead**:-
 we need to make sure our project is executed flawlessly from development to deployment. To keep the database, frontend, and backend organized and manageable by the team, I'll start by establishing a clear repository structure. In order to minimize errors and expedite our workflow, I will also set up CI/CD pipelines so that each code update is automatically tested and deployed.
 For hosting, we will use a managed cloud service like MongoDB Atlas or PostgreSQL for the database, Railway or Render for the backend, and Vercel for the frontend. Stability, scalability, and dependability are offered by this configuration.
 we will incorporate logging and monitoring tools to track performance, identify issues promptly, and guarantee the agent remains secure in order to keep everything under control. To put it briefly, my job is to ensure that the Web Navigator AI Agent is not only operational but also trustworthy, effective, and prepared for practical application.
 
-## ** Prototype and Closing Summary (PM/Testing & Documents Lead)**:
+## ** Prototype and Closing Summary (PM/Testing & Documents Lead)**:-
 Lastly, we will oversee our **task assignments, documentation, testing, and pitch preparation** 
 ### Our model will demonstrate:
 Users enter instructions in a **frontend app**.
@@ -122,6 +123,26 @@ An LLM-powered **backend service** that translates commands into actions in the 
 Real-time web data is retrieved by **browser automation**.
 A **database** for recording and archiving outcome.  
 A **CI/CD pipeline** to maintain dependability and deployability.
+
+## **Summary**:-
+According to the problem statement , if someone wants find information on the web like ex-:best mobiles under 15k they just manually:
+1.open browser
+2.type the problem
+3.visit site
+4.check results one by one
+5.collect the information
+This process takes a lot of time.
+The main problem is that users want to give simple language instructions and have a system that can do all browsing work automatically for them.
+So, the main problem to solve is how to make a system understand what the user wants
+So inorder to solve this problem we need an AI agent that can navigate the web,search,click,extract data and give clean answers.
+We should build an AI Agent that can take natural language instructions and autonomously drive the web on a local computer. The system should combine a locally running LLM with a browser automation setup such as Chrome Headless or a browser inside a local VM. Users should be able to give simple commands and the agent should execute them by controlling the browser, extracting results, and returning structured outputs. 
+Uniqueness and impact -:
+In this project we are using two main unique ideas-
+Job searching agent
+Shopping agent
+From this two ideas -:
+-Let us take an example of a person who is searching for a job in different platforms  can prefer this browser so that he can upload his resume once and then he will get to know about jobs based on his resume from different platforms.So, by this the AI agent will be given access for every platform so that it will search jobs for the user according to their resume.
+-Similarly a girl want to buy a dress for an occasion can give her prompt exactly so that agenr will search,compares price,rating and features and give the best output.
 
 Together, this forms our **Web Navigator AI Agent** — a powerful tool to make browsing more intelligent and autonomous.
 
