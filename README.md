@@ -132,13 +132,16 @@ According to the problem statement , if someone wants find information on the we
  
  This process takes a lot of time.
 The main problem is that users want to give simple language instructions and have a system that can do all browsing work automatically for them.
+
 So, the main problem to solve is how to make a system understand what the user wants
 So inorder to solve this problem we need an AI agent that can navigate the web,search,click,extract data and give clean answers.
-We should build an AI Agent that can take natural language instructions and autonomously drive the web on a local computer. The system should combine a locally running LLM with a browser automation setup such as Chrome Headless or a browser inside a local VM. Users should be able to give simple commands and the agent should execute them by controlling the browser, extracting results, and returning structured outputs. 
+We should build an AI Agent that can take natural language instructions and autonomously drive the web on a local computer. The system should combine a locally running LLM with a browser automation setup such as Chrome Headless or a browser inside a local VM. Users should be able to give simple commands and the agent should execute them by controlling the browser, extracting results, and returning structured outputs.
+
 Uniqueness and impact -:
 In this project we are using two main unique ideas-
 Job searching agent
 Shopping agent
+
 From this two ideas -:
 -Let us take an example of a person who is searching for a job in different platforms  can prefer this browser so that he can upload his resume once and then he will get to know about jobs based on his resume from different platforms.So, by this the AI agent will be given access for every platform so that it will search jobs for the user according to their resume.
 -Similarly a girl want to buy a dress for an occasion can give her prompt exactly so that agenr will search,compares price,rating and features and give the best output.
