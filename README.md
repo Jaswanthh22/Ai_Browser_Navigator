@@ -1,5 +1,3 @@
-<img width="1024" height="1536" alt="ChatGPT Image Sep 28, 2025, 09_28_49 PM" src="https://github.com/user-attachments/assets/327d7db2-4ae7-48ae-a1d6-b259922620e3" />----------------------------------------------------------------
-
 # Web Navigator AI Agent
 ## An autonomous AI agent that understands natural language and drives the web automatically.
 This system combines a **locally running LLM** (for instruction understanding and planning) with a **browser automation setup** (Playwright/Selenium/Puppeteer) to execute user commands.
