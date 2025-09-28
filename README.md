@@ -96,7 +96,7 @@ As the "brain" of the project, the LLM will decipher intent, simplify complicate
 To put it briefly, the LLM integration transforms the agent into a useful partner who adjusts to the way people naturally interact online, rather than merely a tool.
 
 ## ** Frontend developer**:
-“The Front-End Part Is All About the user interface and experience.
+“The frontend part is all about the user interface and experience.
 We’re going to build a simple website where users can either speak or type their instructions. The AI agent’s responses will be displayed in a structured, easy-to-follow format.
 The design will also showcase the agent’s activity and results in real time, with each step unfolding on screen so it feels like an assistant is performing the search right in front of you. If the progress isn’t going in the desired direction, users can stop the process instantly.”
 ## ** Backend developer**:
