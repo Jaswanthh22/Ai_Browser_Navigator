@@ -83,8 +83,7 @@ The browser functions similarly to a virtual assistant, but instead of searching
     
 -   ✅ Plug-and-play local LLM model support
 
-## About OneCompiler
-
+## About OneCompiler:
 OneCompiler helps coding more **accessible, simple, and collaborative** for everyone.
 
 
@@ -115,7 +114,6 @@ In this manner, our AI agent **learns and improves** from past user interactions
 ## **5. DevOps Lead** 
 we need to make sure our project is executed flawlessly from development to deployment. To keep the database, frontend, and backend organized and manageable by the team, I'll start by establishing a clear repository structure. In order to minimize errors and expedite our workflow, I will also set up CI/CD pipelines so that each code update is automatically tested and deployed.
 For hosting, we will use a managed cloud service like MongoDB Atlas or PostgreSQL for the database, Railway or Render for the backend, and Vercel for the frontend. Stability, scalability, and dependability are offered by this configuration.
-
 we will incorporate logging and monitoring tools to track performance, identify issues promptly, and guarantee the agent remains secure in order to keep everything under control. To put it briefly, my job is to ensure that the Web Navigator AI Agent is not only operational but also trustworthy, effective, and prepared for practical application.
 
 ## **6. Prototype and Closing Summary (PM/Testing & Documents Lead)**
