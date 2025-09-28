@@ -93,7 +93,7 @@ OneCompiler helps coding more **accessible, simple, and collaborative** for ever
 
 ## **1. Project Introduction**:-
 The idea is to build an AI Agent that can take **natural language instructions** from the user, and then autonomously control a browser to fetch and structure information. For example, if a user says _'Search for laptops under 50k and list the top 5'_, our agent will plan the task, browse the web, extract results,compare and return them in a neat structured format.
-To achieve this, we are combining a **local LLM for planning** with **browser automation tools** like .....................................{Playwright or Selenium}. We’ve divided our responsibilities into five roles to bring this prototype to life. Let’s walk you through them.
+To achieve this, we are combining a **local LLM for planning** with **browser automation tools** like Playwright or Selenium. We’ve divided our responsibilities into five roles to bring this prototype to life. Let’s walk you through them.
 
 ## **2. Frontend developer**:
 This person is in charge of the **user interface and experience**.
