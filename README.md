@@ -82,7 +82,7 @@ The browser functions similarly to a virtual assistant, but instead of searching
 -   ✅ Plug-and-play local LLM model support
 
 ## About OneCompiler:
-OneCompiler helps coding more **accessible, simple, and collaborative** for everyone.
+OneCompiler helps coding more **accessible with cloud compiler, simple, and collaborative** for everyone.
 
 
 # Project Introduction:-
