@@ -124,11 +124,11 @@ A **CI/CD pipeline** to maintain dependability and deployability.
 
 ## Summary:-
 According to the problem statement , if someone wants find information on the web like ex-:best mobiles under 15k they just manually:
-1.open browser
-2.type the problem
-3.visit site
-4.check results one by one
-5.collect the information
+-open browser
+-type the problem
+-visit site
+-check results one by one
+-collect the information
 This process takes a lot of time.
 The main problem is that users want to give simple language instructions and have a system that can do all browsing work automatically for them.
 So, the main problem to solve is how to make a system understand what the user wants
