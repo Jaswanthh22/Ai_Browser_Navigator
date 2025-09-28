@@ -1,4 +1,4 @@
-----------------------------------------------------------------
+<img width="1024" height="1536" alt="ChatGPT Image Sep 28, 2025, 09_28_49 PM" src="https://github.com/user-attachments/assets/327d7db2-4ae7-48ae-a1d6-b259922620e3" />----------------------------------------------------------------
 
 # Web Navigator AI Agent
 ## An autonomous AI agent that understands natural language and drives the web automatically.
@@ -21,7 +21,9 @@ The agent will: -Use a local LLM to plan the task,
 -extract data like(titles, costs, and ratings),
 Analyze the outcomes and present them in a clear, well-organized manner.
 The browser functions similarly to a virtual assistant, but instead of searching, it does web work for us.
-
+## Approach:
+The approach for building the Web Navigator AI involves:
+it takes user queries in natural language and then normalize the input for further processing ,and then the llm interprets user intent,extract key tasks just constraints and output format and then the query converted into executable workflow.
 ##  Features:
 -   **Natural Language Understanding**  
     Users can simply talk or type instruction like:
@@ -50,7 +52,11 @@ The browser functions similarly to a virtual assistant, but instead of searching
     Searches job portals (LinkedIn, Naukri, Indeed), extracts job details (title, company, salary, location, experience), ranks, and organizes.
 -   **Shopping agent**
     Searches multiple e-commerce sites (Amazon, Flipkart, etc.), collects product info (price ,rating,features) , compares,and summarizes.
--  
+
+## Workflow:
+![Alt text](<img width="819" height="1382" alt="Web AI Navigator workflow png (2)" src="https://github.com/user-attachments/assets/fa49e61e-9d2b-43ce-9641-7894d159d5dc" />
+)
+
 
 ## Tech Stack :
 - **Languages :** Python, Node.js  
