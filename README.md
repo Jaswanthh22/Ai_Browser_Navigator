@@ -100,14 +100,14 @@ To put it briefly, the LLM integration transforms the agent into a useful partne
 We’re going to build a simple website where users can either speak or type their instructions. The AI agent’s responses will be displayed in a structured, easy-to-follow format.
 The design will also showcase the agent’s activity and results in real time, with each step unfolding on screen so it feels like an assistant is performing the search right in front of you. If the progress isn’t going in the desired direction, users can stop the process instantly.”
 ## ** Backend developer**:
-This entails creating **REST APIs** to link the AI agent and frontend. The **local LLM** will receive user instructions from the backend (via LangChain or Ollama), convert them into actionable steps, and then use Playwright to initiate **browser automation**.
-we'll also take care of **authentication and business logic**, ensuring that every request is handled securely and effectively.
-**API Implementation**: Creates REST APIs to link the AI system and the frontend, guaranteeing effective transmission of commands and status updates.
-Using LangChain or Ollama, the local LLM receives instructions, converts them into multi-step plans, and handles **Intent Routing** to specialized agents. This is known as **Agent Control**.
-* **Automation Trigger**: Manages browser automation sessions (via Playwright or Selenium), translating planned steps into web actions.
-* **Security & Logic**: Ensures secure processing, efficient execution, and accurate streaming of requests to the user.
+Backend focuses on connecting the AI agent with the frontend without relying on external APIs. The backend will manage direct interactions with the local LLM (via LangChain or Ollama), transforming user instructions into actionable, multi-step plans.
 
-## ** LLM integration**:
+LLM Orchestration: The backend ensures prompts are structured, reasoning flows smoothly, and intent is routed to the right specialized agent. This is the essence of Agent Control.
+
+Automation Trigger: Oversees browser automation sessions (using Playwright or Selenium), converting the agent’s step-by-step plan into real web actions.
+
+Security & Logic: Handles authentication, ensures safe processing, and maintains accurate execution of tasks while streaming progress back to the user in real time.
+
 
 ## ** DevOps Lead**:
 we need to make sure our project is executed flawlessly from development to deployment. To keep the database, frontend, and backend organized and manageable by the team, I'll start by establishing a clear repository structure. In order to minimize errors and expedite our workflow, I will also set up CI/CD pipelines so that each code update is automatically tested and deployed.
