@@ -8,7 +8,7 @@ This system combines a **locally running LLM** (for instruction understanding an
 ## overview:
 To do tasks like searching, clicking, extracting data, and presenting results in an organized manner, the browser agent uses natural language instructions, either spoken or typed, to determine what the user truly wants. In order to navigate websites, fill out forms, click buttons, and carry out intricate web tasks based on natural language descriptions, this process combines browser automation, DOM analysis, and AI models.
 For example:
-"Look for laptops under ₹50,000 and make a list of the top five."
+"when we are searching of shoes in amezon"
 The agent will: -Use a local LLM to plan the task,
 -Open the browser and look up well-known websites,
 -extract data like(titles, costs, and ratings),
@@ -77,8 +77,6 @@ The browser functions similarly to a virtual assistant, but instead of searching
     
 -   ✅ Memory of past actions for better context handling
     
--   ✅ Integration with APIs for hybrid workflows
-    
 -   ✅ Web UI for interactive usage
     
 -   ✅ Plug-and-play local LLM model support
@@ -87,20 +85,20 @@ The browser functions similarly to a virtual assistant, but instead of searching
 OneCompiler helps coding more **accessible, simple, and collaborative** for everyone.
 
 
-## ** Project Introduction**:-
+# Project Introduction:-
 The idea is to build an AI Agent that can take **natural language instructions** from the user, and then autonomously control a browser to fetch and structure information. For example, if a user says _'Search for laptops under 50k and list the top 5'_, our agent will plan the task, browse the web, extract results,compare and return them in a neat structured format.
 To achieve this, we are combining a **local LLM for planning** with **browser automation tools** like Playwright or Selenium. We’ve divided our responsibilities into five roles to bring this prototype to life. Let’s walk you through them.
 
-## ** LLM integration**:-
+## LLM integration:-
 As the "brain" of the project, the LLM will decipher intent, simplify complicated requests, and facilitate a conversational and seamless browsing experience. Furthermore, it will give users context-aware explanations so they are aware of what is happening at every stage. Whether it's completing forms, summarizing content, or comparing data from various websites, the LLM will help close the gap between online activities and human communication.
 To put it briefly, the LLM integration transforms the agent into a useful partner who adjusts to the way people naturally interact online, rather than merely a tool.
 
-## ** Frontend developer**:-
+## Frontend developer:-
 “The frontend part is all about the user interface and experience.
 We’re going to build a simple website where users can either speak or type their instructions. The AI agent’s responses will be displayed in a structured, easy-to-follow format.
 The design will also showcase the agent’s activity and results in real time, with each step unfolding on screen so it feels like an assistant is performing the search right in front of you. If the progress isn’t going in the desired direction, users can stop the process instantly.”
 
-## ** Backend developer**:-
+## Backend developer:-
 Backend focuses on connecting the AI agent with the frontend without relying on external APIs. The backend will manage direct interactions with the local LLM (via LangChain or Ollama), transforming user instructions into actionable, multi-step plans.
 
 LLM Orchestration: The backend ensures prompts are structured, reasoning flows smoothly, and intent is routed to the right specialized agent. This is the essence of Agent Control.
@@ -115,7 +113,7 @@ we need to make sure our project is executed flawlessly from development to depl
 For hosting, we will use a managed cloud service like MongoDB Atlas or PostgreSQL for the database, Railway or Render for the backend, and Vercel for the frontend. Stability, scalability, and dependability are offered by this configuration.
 we will incorporate logging and monitoring tools to track performance, identify issues promptly, and guarantee the agent remains secure in order to keep everything under control. To put it briefly, my job is to ensure that the Web Navigator AI Agent is not only operational but also trustworthy, effective, and prepared for practical application.
 
-## ** Prototype and Closing Summary (PM/Testing & Documents Lead)**:-
+## Prototype and Closing Summary (PM/Testing & Documents Lead):-
 Lastly, we will oversee our **task assignments, documentation, testing, and pitch preparation** 
 ### Our model will demonstrate:
 Users enter instructions in a **frontend app**.
@@ -124,7 +122,7 @@ Real-time web data is retrieved by **browser automation**.
 A **database** for recording and archiving outcome.  
 A **CI/CD pipeline** to maintain dependability and deployability.
 
-## **Summary**:-
+## Summary:-
 According to the problem statement , if someone wants find information on the web like ex-:best mobiles under 15k they just manually:
 1.open browser
 2.type the problem
