@@ -21,6 +21,7 @@ Analyze the outcomes and present them in a clear, well-organized manner.
 The browser functions similarly to a virtual assistant, but instead of searching, it does web work for us.
 ## Approach:
 The approach for building the Web Navigator AI involves:
+
 it takes user queries in natural language and then normalize the input for further processing ,and then the llm interprets user intent,extract key tasks just constraints and output format and then the query converted into executable workflow.
 ##  Features:
 -   **Natural Language Understanding**  
@@ -52,9 +53,7 @@ it takes user queries in natural language and then normalize the input for furth
     Searches multiple e-commerce sites (Amazon, Flipkart, etc.), collects product info (price ,rating,features) , compares,and summarizes.
 
 ## Workflow:
-![Alt text](<img width="819" height="1382" alt="Web AI Navigator workflow png (2)" src="https://github.com/user-attachments/assets/fa49e61e-9d2b-43ce-9641-7894d159d5dc" />
-)
-
+<img width="819" height="1382" alt="Web AI Navigator workflow png (2)" src="https://github.com/user-attachments/assets/51815f43-bc76-4ffd-8844-cfa46ddd3bf7" />
 
 ## Tech Stack :
 - **Languages :** Python, Node.js  
@@ -124,7 +123,23 @@ we need to make sure our project is executed flawlessly from development to depl
 For hosting, we will use a managed cloud service like MongoDB Atlas or PostgreSQL for the database, Railway or Render for the backend, and Vercel for the frontend. Stability, scalability, and dependability are offered by this configuration.
 we will incorporate logging and monitoring tools to track performance, identify issues promptly, and guarantee the agent remains secure in order to keep everything under control. To put it briefly, my job is to ensure that the Web Navigator AI Agent is not only operational but also trustworthy, effective, and prepared for practical application.
 
-## Prototype and Closing Summary (PM/Testing & Documents Lead):-
+## Data Handling:-
+-  ⁠Data Extraction  
+This is the first step, where the agent finds and collects the specific information it needs from a webpage. After navigating to the correct page, it scans the raw HTML to identify relevant data points, such as product titles, prices, ratings, or job posting details.
+
+Analogy: Think of this as reading a newspaper article and using a highlighter to mark only the important sentences and figures.
+
+-  ⁠Data Structuring  
+Raw data can often be messy. This step involves cleaning and organizing that data into a clear format. The agent takes the highlighted information and arranges it neatly.
+
+Analogy: This is like taking the sentences you highlighted and entering them into a spreadsheet with clear columns like "Product Name," "Price," and "Rating." This step brings order to chaos, converting web data into formats like JSON, CSV, or a table.
+
+-  ⁠Data Storage  
+Once the data is clean and organized, it needs to be saved. The system uses a database, like PostgreSQL or MongoDB, to record and store the results. This allows the user to access the findings later and keeps a record of the agent's completed tasks.
+
+Analogy: This is like saving your spreadsheet file to your hard drive so you can easily find, open, and use it later.
+
+## Prototype (PM/Testing & Documents Lead):-
 Lastly, we will oversee our **task assignments, documentation, testing, and pitch preparation** 
 ### Our model will demonstrate:
 Users enter instructions in a **frontend app**.
