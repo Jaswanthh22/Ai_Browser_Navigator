@@ -123,6 +123,24 @@ we need to make sure our project is executed flawlessly from development to depl
 For hosting, we will use a managed cloud service like MongoDB Atlas or PostgreSQL for the database, Railway or Render for the backend, and Vercel for the frontend. Stability, scalability, and dependability are offered by this configuration.
 we will incorporate logging and monitoring tools to track performance, identify issues promptly, and guarantee the agent remains secure in order to keep everything under control. To put it briefly, my job is to ensure that the Web Navigator AI Agent is not only operational but also trustworthy, effective, and prepared for practical application.
 
+## Algorithms and Models:- 
+
+The main intelligence of the Web Navigator AI Agent comes from a unique algorithm that guides how the model thinks and a set of strong pre-trained language models that handle reasoning tasks.  
+
+**The Core Algorithm**: ReAct (Reasoning and Acting)  
+
+The main algorithm is called ReAct. It emphasizes reasoning and action, enabling the AI to tackle complex tasks by mimicking a human-like thought process.  
+
+The ReAct framework operates in a continuous cycle.  
+
+**Thought (Reasoning)**: The system considers the user’s request and the relevant context. Then, it determines the next logical step that will help it reach the goal.  
+
+**Action (Acting)**: Next, the system chooses and performs a specific “tool.” In this project, the tools are the commands for browser automation. These commands include goto("url"), type("selector", "text"), click("selector"), and scrape_data().  
+
+**Observation (Result)**: The model observes the results of its action. For instance, it clicks a button and checks the new state of the web page. This observation informs the next cycle’s “Thought.”  
+
+This cycle of Thought, Action, and Observation keeps going until the agent successfully fulfills the user’s request.
+
 ## Data Handling:-
 -  **⁠Data Extraction**:  
 This is the first step, where the agent finds and collects the specific information it needs from a webpage. After navigating to the correct page, it scans the raw HTML to identify relevant data points, such as product titles, prices, ratings, or job posting details.
