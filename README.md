@@ -221,3 +221,106 @@ From this two ideas -:
 Together, this forms our **Web Navigator AI Agent** — a powerful tool to make browsing more intelligent and autonomous.
 
 Thank you!"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Project Info:
+**URL**:-
+
+## 1. Using Our Preferred IDE (Local Development)
+
+The primary way we contribute is by working locally and pushing changes to this repository. This requires Node.js and npm to be installed (we recommend using nvm for installation management).
+
+**Frontend Framework**: React
+
+**Build Tool**: Vite
+
+**Language**: TypeScript (For robust, type-safe code)
+
+**Styling**: Tailwind CSS
+
+**Component Library**: shadcn-ui (For beautiful, accessible components)
+
+**Local LLM Integration**: Ollama (Running the phi3 model)
+
+**Backend**: Node.js / Express (For server logic and API handling)
+
+**Web Automation**: Playwright (The core of the "Navigator")
+
+## Quick Start Guide for Team Members
+**Step-1 :** 
+ Install the Local AI Engine (Ollama - This is crucial for the AI functionality).
+- Download Ollama from https://ollama.ai
+- Pull the base model we use for the project
+- go to your terminal
+- ollama pull phi3
+  
+**Step-2 :** 
+Start the Backend Server (The backend handles the AI, web automation, and data logic).
+- cd server
+- npm install
+- npx playwright install chromium  # Ensure web automation tools are ready
+- cp .env.example .env           # Copy and configure environment variables
+Server runs at: http://localhost:3001
+
+**Step-3 :**
+Start the Frontend Application(The frontend is the user interface where the team and users interact with the Navigator).
+- In a new terminal, from the project root:
+  1. npm install
+  2. npm run dev
+Frontend Runs At: http://localhost:8080
+
+**Step-4 :**
+Verification
+Visit the Settings page in the running application and click the "Test" button. It should confirm that both the Server and Ollama are "Online". Now, try asking the local AI for help!
+
+Project File Structure Highlights
+📁 Server Structure
+Our backend is organized for clear separation of concerns:
+
+
+<pre>
+1. server/
+2. ├── index.js           # Main Express server entry point
+3. ├── routes/
+4. │   ├── chat.js       # Handles communication with Ollama (AI logic)
+5. │   ├── navigator.js  # Playwright web automation tasks
+6. │   ├── jobs.js       # Job application logic
+7. │   └── price.js      # Price comparison logic
+8. ├── package.json
+9. └── .env              # Local Configuration (DO NOT COMMIT!)
+</pre>
+
+## 🔧 Configuration
+We manage environment variables in server/.env. Key variables to configure:
+
+PORT=3001
+OLLAMA_URL=http://localhost:11434
+FRONTEND_URL=http://localhost:8080
+DEFAULT_MODEL=phi3
+📝 API Endpoints
+Chat: /api/chat/stream, /api/chat/models Navigator: /api/navigator/start, /api/navigator/logs/:id Jobs: /api/jobs/upload-resume, /api/jobs/start Price: /api/price/search
+
+Check server/README.md and SETUP.md for detailed documentation!
+
+⚠️ Troubleshooting
+"Failed to connect to local server" → Make sure cd server && npm run dev is running
